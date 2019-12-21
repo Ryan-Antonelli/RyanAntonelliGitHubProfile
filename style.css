@@ -1,8 +1,65 @@
 
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    font-family: 'Lato', sans-serif;;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
 a {
     text-decoration: none;
 }
 
+a:visited {
+    color: darkgoldenrod;
+}
+
+button {
+    background-color: cadetblue;
+    color: white;
+    margin-bottom: 20px;
+}
 #container {
     margin: auto;
 }
@@ -10,34 +67,29 @@ a {
 #header {
     width: 960px;
     margin: auto;
+    height: 10%;
 }
 
 #name {
     background-color: cadetblue;
     color: cornsilk;
     width: 25%;
-    padding-left: 30px;
+    padding-left: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    border-radius: 5px;
+    padding-right: 20px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 36px;
 
 }
 
 #links {
     float:right;
     position: relative;
-    bottom: 60px;
+    bottom: 40px;
+    color: cadetblue;
 }
-#portfolioPage {
-    width: 960px;
-    height: 950px;
-    margin: auto;
-    background-color: cornsilk;
-    margin-top: 10px;
-    position: relative;
-    top: 20px;
-    border-radius: 5px;
-}   
 
 #aboutLink {
     float: right;
@@ -47,7 +99,7 @@ a {
 
 #portfolioLink {
     float: right;
-    padding-right: 2px;
+    padding-right: 3px;
     border-right: 1px lightgrey solid;
     margin-right: 5px;
 }
@@ -55,21 +107,41 @@ a {
 
 #contactLink {
     float: right;
-    padding-right: 2px;
+    padding-right: 3px;
     border-right: 1px lightgrey solid;
     margin-right: 5px;
 }
-#portfolioHeader {
-    color: cadetblue;
-    padding-left: 10px;
-    padding-top: 20px;
-    border-bottom: lightgrey 5px;
-    
-}
+
 #background {
     width: 100%;
-    height: 1000px;
-    background-color: burlywood;
+    background-color: #adb7b8;
+    margin:auto;
+    overflow: hidden;
+}
+
+#portfolioPage {
+    width: 960px;
+    margin: auto;
+    background-color: cornsilk;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px ;
+}  
+
+#aboutMe {
+    border-bottom: lightgray solid 2px;
+    padding-bottom: 20px;
+    color: cadetblue;
+    padding-top: 50px;
+    width: 890px;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+#footer {
+    height: 5%;
 }
 
 #copyright {
@@ -80,5 +152,102 @@ a {
     padding-bottom: 10px;
     margin: 0;
     color: cornsilk;
+}
 
+label {
+    margin-left: 34px;
+}
+
+#nameLabel {
+    padding-top: 30px;
+}
+
+#nameInput{
+    display: block;
+    width: 890px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#emailInput{
+    display: block;
+    width: 890px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#messageInput{
+    display: block;
+    width: 890px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+}
+
+
+.content {
+
+    font-size: large;
+    padding-bottom: 40px;
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#img1 {
+
+    padding-left: 110px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+#img2{
+
+    padding-left: 110px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#img3 {
+
+  
+    padding-left: 110px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+#img4 {
+
+    padding-left: 110px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.gallery {
+    position: relative;
+    text-align: center;
+    float: left;
+}
+
+.imageText {
+    position: absolute;
+    bottom: 50px;
+    left: 110px;
+    font-size: 26px;
+    color: antiquewhite;
+    background-color: cadetblue;
+    width: 320px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#bioPic {
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    float: left;
+}
+
+.clear { 
+    clear: left; 
+    display: block; 
 }
